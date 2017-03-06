@@ -16,7 +16,7 @@
       <button class="main-nav__btn" type="button">Открыть</button>
       <div class="main-nav__container">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+          <li class="main-nav__list__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
           <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
@@ -141,6 +141,25 @@
       <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
     </div>
   </footer>
+
+  <div class="modal">
+    <b class="modal__title">Добавить в корзину</b>
+    <span class="modal__desc">Выберите размер:</span>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="modal__radio">
+        <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
+        <label class="modal__label" for="size-s">S</label>
+      </div>
+      <div class="modal__radio">
+        <input class="modal__input" id="size-m" type="radio" name="size" value="m">
+        <label class="modal__label" for="size-m">M</label>
+      </div>
+      <div class="modal__radio">
+        <input class="modal__input" id="size-l" type="radio" name="size" value="l">
+        <label class="modal__label" for="size-l">L</label>
+      </div>
+      <button class="modal__submit" type="submit">Добавить</button>
+    </form>
   </div>
 </body>
 </html>
