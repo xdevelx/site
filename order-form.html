@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body class="page">
+
+  <header class="main-header">
+    <div class="logo">
+      <a class="logo__link" href="index.html">
+        <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+      </a>
+    </div>
+    <nav class="main-nav  main-nav--opened  main-nav--no-js">
+      <button class="main-nav__btn" type="button">Открыть</button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-header__promo">
+      <h1 class="main-header__title">Вязание на заказ</h1>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <p class="page__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+      <!-- 1 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">Тип</legend>
+        <div class="radio">
+          <input class="radio__input" id="type-accessory" type="radio" name="order-type" value="accessory" checked>
+          <label class="radio__label" for="type-accessory" >Аксессуар для интерьера</label>
+        </div>
+        <div class="radio">
+          <input class="radio__input" id="type-toy" type="radio" name="order-type" value="toy">
+          <label class="radio__label" for="type-toy" >Детская игрушка</label>
+        </div>
+      </fieldset>
+      <!-- 2 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">Цвет</legend>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-white" type="checkbox" name="color-white" checked>
+          <label class="checkbox__label" for="color-white" >Белый</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-grey" type="checkbox" name="color-grey" checked>
+          <label class="checkbox__label" for="color-grey" >Серый</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-tiffany" type="checkbox" name="color-tiffany">
+          <label class="checkbox__label" for="color-tiffany" >«Тиффани»</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-black" type="checkbox" name="color-black">
+          <label class="checkbox__label" for="color-black" >Черный</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-pink" type="checkbox" name="color-pink">
+          <label class="checkbox__label" for="color-pink" >Розовый</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox__input" id="color-orange" type="checkbox" name="color-orange">
+          <label class="checkbox__label" for="color-orange" >Оранжевый</label>
+        </div>
+      </fieldset>
+      <!-- 3 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">ФИО</legend>
+        <div class="textfield">
+          <label class="textfield__label" for="first-name">Имя:</label>
+          <input class="textfield__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+        </div>
+        <div class="textfield">
+          <label class="textfield__label" for="second-name">Фамилия:</label>
+          <input class="textfield__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*">
+        </div>
+        <div class="textfield">
+          <label class="textfield__label" for="middle-name">Отчество:</label>
+          <input class="textfield__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+        </div>
+      </fieldset>
+      <!-- 4 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">ТЕЛ</legend>
+        <div class="textfield  textfield--phone">
+          <input class="textfield__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+        </div>
+      </fieldset>
+      <!-- 5 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">E-mail</legend>
+        <div class="textfield  textfield--email">
+          <input class="textfield__input" type="email" name="email" placeholder="Ваш Email*">
+        </div>
+      </fieldset>
+      <!-- 6 -->
+      <fieldset class="form-group">
+        <legend class="form-group__legend">Доп</legend>
+        <div class="textfield">
+          <textarea class="textfield__textarea" name="order-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </fieldset>
+      <span class="order-form__required">*Поля обязательны для заполнения</span>
+      <button class="order-form__submit btn" type="submit">Отправить заказ</button>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__social  social-links">
+      <a class="social-link" href="#">instagram</a>
+      <a class="social-link" href="#">facebook</a>
+      <a class="social-link" href="#">twitter</a>
+    </div>
+    <div class="main-footer__copyright  copyright">
+      <span class="copyright__text">Разработано</span>
+      <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
+    </div>
+  </footer>
+</body>
+</html>
