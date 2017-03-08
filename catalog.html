@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body class="page">
+  <header class="main-header">
+    <div class="logo">
+      <a class="logo__link" href="index.html">
+        <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+      </a>
+    </div>
+    <nav class="main-nav  main-nav--opened  main-nav--no-js">
+      <button class="main-nav__btn" type="button">Открыть</button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="order-form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-header__promo">
+      <h1 class="main-header__title">Каталог товаров</h1>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <!-- 1 -->
+    <article class="prod-card">
+      <a class="prod-card__img-link" href="#">
+        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Мягкая игрушка — «Зайчик-попрыгайчик»" width="260" height="195">
+      </a>
+      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Зайчик-попрыгайчик</a></h2>
+      <span class="prod-card__desc">Рост 30 см, вес 200 г</span>
+      <div class="prod-card__order-info">
+        <span class="prod-card__price">1 200 руб.</span>
+        <a class="prod-card__btn" href="#">Заказать</a>
+      </div>
+    </article>
+    <!-- 2 -->
+    <article class="prod-card">
+      <a class="prod-card__img-link" href="#">
+        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для белья" width="260" height="195">
+      </a>
+      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Корзинка для белья</a></h2>
+      <span class="prod-card__desc">Диаметр 15 см, высота 10 см</span>
+      <div class="prod-card__order-info">
+        <span class="prod-card__price">690 руб.</span>
+        <a class="prod-card__btn" href="#">Заказать</a>
+      </div>
+    </article>
+    <!-- 3 -->
+    <article class="prod-card">
+      <a class="prod-card__img-link" href="#">
+        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для игрушек" width="260" height="195">
+      </a>
+      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Большая корзинка для игрушек</a></h2>
+      <span class="prod-card__desc">Диаметр 30 см, высота 30 см</span>
+      <div class="prod-card__order-info">
+        <span class="prod-card__price">1 500 руб.</span>
+        <a class="prod-card__btn" href="#">Заказать</a>
+      </div>
+    </article>
+
+    <section class="video-card">
+      <h2 class="video-card__title">Процесс производства</h2>
+      <div class="video-card__video"></div>
+      <p class="video-card__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="video-card__btn btn" href="#">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__social  social-links">
+      <a class="social-link" href="#">instagram</a>
+      <a class="social-link" href="#">facebook</a>
+      <a class="social-link" href="#">twitter</a>
+    </div>
+    <div class="main-footer__copyright  copyright">
+      <span class="copyright__text">Разработано</span>
+      <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
+    </div>
+  </footer>
+
+  <div class="modal">
+    <b class="modal__title">Добавить в корзину</b>
+    <span class="modal__desc">Выберите размер:</span>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="modal__radio">
+        <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
+        <label class="modal__label" for="size-s">S</label>
+      </div>
+      <div class="modal__radio">
+        <input class="modal__input" id="size-m" type="radio" name="size" value="m">
+        <label class="modal__label" for="size-m">M</label>
+      </div>
+      <div class="modal__radio">
+        <input class="modal__input" id="size-l" type="radio" name="size" value="l">
+        <label class="modal__label" for="size-l">L</label>
+      </div>
+      <button class="modal__submit" type="submit">Добавить</button>
+    </form>
+  </div>
+</body>
+</html>
