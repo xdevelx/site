@@ -1,0 +1,30 @@
+.user-block {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-block__item {
+  background-color: $user-block-bg;
+  border-top: 1px solid $user-block-border;
+}
+
+.user-block__link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  text-decoration: none;
+  color: $user-block-color;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}
