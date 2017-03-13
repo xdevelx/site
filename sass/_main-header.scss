@@ -1,0 +1,23 @@
+.main-header__promo {
+  padding-top: 70px;
+  background-color: $main-header-promo;
+
+  &--index {
+    background-image: url("/img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+    background-color: $main-header-promo-index;
+  }
+}
+
+.main-header__title {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 122px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $main-header-title;
+}

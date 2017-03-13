@@ -1,0 +1,46 @@
+.goods-type {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.goods-type__link {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  color: $goods-type-color;
+  font-weight: 700;
+  text-decoration: none;
+  padding-right: 100px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--interior {
+    background-color: $goods-type-interior;
+  }
+
+  &--interior::after {
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("/img/icon-interior.svg");
+  }
+
+  &--toys {
+    background-color: $goods-type-toys;
+  }
+
+  &--toys::after {
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background-image: url("/img/icon-toy.svg");
+  }
+}

@@ -9,6 +9,9 @@
 
 /* Document
    ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 html {
   font-family: sans-serif; /* 1 */

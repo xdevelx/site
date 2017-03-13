@@ -5,12 +5,12 @@
   color: $main-nav-color;
   background-color: #ffffff;
 
-  &--closed .main-nav__btn {
-    background-image: url("../img/icon-menu-open.svg");
+  &--opened .main-nav__btn {
+    background-image: url("/img/icon-menu-close.svg");
   }
 
-  &--closed .main-nav__list {
-    display: none;
+  &--opened .main-nav__list {
+    display: block;
   }
 
   &--no-js .main-nav__btn {
@@ -19,6 +19,7 @@
 
   &--no-js .main-nav__list {
     position: static;
+    display: block;
   }
 }
 
@@ -31,7 +32,7 @@
   font-size: 0;
   background: none;
   border: none;
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("/img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
@@ -47,6 +48,7 @@
 }
 
 .main-nav__list {
+  display: none;
   position: absolute;
   z-index: 20;
   width: 100%;

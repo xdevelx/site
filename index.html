@@ -8,27 +8,32 @@
 </head>
 <body class="page">
   <header class="main-header">
-    <div class="logo">
-      <a class="logo__link">
-        <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
-      </a>
-    </div>
-    <nav class="main-nav  main-nav--opened  main-nav--no-js">
-      <button class="main-nav__btn" type="button">Открыть</button>
+    <nav class="main-nav">
       <div class="main-nav__container">
-        <ul class="main-nav__list">
+        <div class="main-nav__logo  logo">
+          <a class="logo__link">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+          </a>
+        </div>
+        <button class="main-nav__btn" type="button">Открыть</button>
+        <ul class="main-nav__list  main-nav__list--menu">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="order-form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--search" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item  main-nav__item--small"><a class="main-nav__link" href="#">Новые поступления</a></li>
+          <li class="main-nav__item  main-nav__item--small"><a class="main-nav__link" href="#">Распродажа</a></li>
+        </ul>
+        <ul class="main-nav__list  main-nav__list--user-block  user-block">
+          <li class="user-block__item"><a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a></li>
+          <li class="user-block__item"><a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a></li>
         </ul>
       </div>
+      <a class="main-nav__delivery" href="#">Бесплатная доставка по России</a>
     </nav>
     <div class="main-header__promo  main-header__promo--index">
-      <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="main-header__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       <ul class="goods-type">
-        <li class="goods-type__item"><a class="goods-type__link  goods-type__link--interior" href="#">Предметы интерьера</a></li>
-        <li class="goods-type__item"><a class="goods-type__link  goods-type__link--toys" href="#">Детские игрушки</a></li>
+        <li class="goods-type__item"><a class="goods-type__link  goods-type__link--interior" href="#">Предметы<br>интерьера</a></li>
+        <li class="goods-type__item"><a class="goods-type__link  goods-type__link--toys" href="#">Детские<br>игрушки</a></li>
       </ul>
     </div>
   </header>
