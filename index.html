@@ -2,6 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,12 +26,14 @@
           <li class="main-nav__item  main-nav__item--small"><a class="main-nav__link" href="#">Новые поступления</a></li>
           <li class="main-nav__item  main-nav__item--small"><a class="main-nav__link" href="#">Распродажа</a></li>
         </ul>
-        <ul class="main-nav__list  main-nav__list--user-block  user-block">
-          <li class="user-block__item"><a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a></li>
-          <li class="user-block__item"><a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a></li>
+        <div class="main-nav__list  main-nav__list--user-block">
+          <ul class="user-block">
+          <li class="user-block__item  user-block__item--search"><a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a></li>
+          <li class="user-block__item  user-block__item--cart"><a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a></li>
         </ul>
+        </div>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </div>
-      <a class="main-nav__delivery" href="#">Бесплатная доставка по России</a>
     </nav>
     <div class="main-header__promo  main-header__promo--index">
       <h1 class="main-header__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>

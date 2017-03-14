@@ -19,7 +19,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-47%);
   }
 
   &--interior {
@@ -42,5 +42,26 @@
     width: 60px;
     height: 60px;
     background-image: url("/img/icon-toy.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .goods-type {
+    display: flex;
+  }
+
+  .goods-type__item {
+    flex: 1 0 50%;
+  }
+
+  .goods-type__link {
+    padding-top: 28px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--toys::after {
+      right: 34px;
+    }
   }
 }

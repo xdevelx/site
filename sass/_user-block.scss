@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  color: $user-block-color;
+  background-color: $user-block;
+
 }
 
 .user-block__item {
-  background-color: $user-block;
   border-top: 1px solid $user-block-border;
 }
 
@@ -26,5 +28,36 @@
 
   &:active {
     opacity: .3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-block {
+    display: flex;
+    flex: 0 0 348px;
+    align-items: center;
+  }
+
+  .user-block__item {
+    border-top: none;
+
+    &--search {
+      width: 84px;
+      border-left: 1px solid $user-block-border;
+      border-right: 1px solid $user-block-border;
+    }
+  }
+
+  .user-block__link {
+
+    &--search {
+      font-size: 0;
+      padding: 0;
+      height: 88px;
+    }
+
+    &--cart {
+      padding-left: 82px;
+    }
   }
 }
