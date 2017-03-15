@@ -4,23 +4,27 @@ $color-black: #000000;
 $color-diesel: #010000;
 $color-gallery: #ececec;
 $color-seashell: #f1f1f1;
+$color-tundora: #444444;
 $color-downy: #63d1bb;
 $color-puerto-rico: desaturate(darken(#63d1bb, 5), 6);
 
 
 // Color settings
+$page: $color-white;
 $page-color: $color-black;
 
 $main-header-promo: $color-seashell;
-$main-header-promo-index: $color-white;
+$main-header-border: $color-gallery;
 $main-header-title: $color-diesel;
 
 $main-nav-border: $color-gallery;
 $main-nav-color: $color-black;
+$main-nav-item: $color-white;
+$main-nav-delivery: $color-tundora;
 
-$user-block: $color-white;
 $user-block-border: $color-gallery;
 $user-block-color: $color-black;
+$user-block-item: $color-white;
 
 $goods-type-color: $color-white;
 $goods-type-interior: $color-downy;

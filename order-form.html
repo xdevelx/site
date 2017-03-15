@@ -2,27 +2,39 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-
   <header class="main-header">
-    <div class="logo">
-      <a class="logo__link" href="index.html">
-        <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
-      </a>
-    </div>
-    <nav class="main-nav  main-nav--opened  main-nav--no-js">
-      <button class="main-nav__btn" type="button">Открыть</button>
+    <nav class="main-nav">
       <div class="main-nav__container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+        <div class="main-nav__logo  logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+          </a>
+        </div>
+        <button class="main-nav__btn" type="button">Открыть</button>
+        <ul class="main-nav__list  main-nav__list--menu">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--search" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link  main-nav__link--icon  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
         </ul>
+        <ul class="main-nav__list  main-nav__list--info">
+          <li class="main-nav__item  main-nav__item--info"><a class="main-nav__link" href="#">Новые поступления</a></li>
+          <li class="main-nav__item  main-nav__item--info"><a class="main-nav__link" href="#">Распродажа</a></li>
+        </ul>
+        <div class="main-nav__list  main-nav__list--user-block">
+          <ul class="user-block">
+            <li class="user-block__item  user-block__item--search"><a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a></li>
+            <li class="user-block__item  user-block__item--cart"><a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </div>
     </nav>
     <div class="main-header__promo">
