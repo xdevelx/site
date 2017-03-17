@@ -1,1 +1,49 @@
+.best-product {
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
+.best-product__info {
+  margin-bottom: 25px;
+  padding-top: 27px;
+}
+
+.best-product__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.best-product__period {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $best-product-period;
+}
+
+.best-product__desc {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $best-product-color;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.best-product__img-holder {
+  margin: 0;
+  text-align: center;
+}
+
+.best-product__img {
+  margin-bottom: 8px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.best-product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $best-product-color;
+}
