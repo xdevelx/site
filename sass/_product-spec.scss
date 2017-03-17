@@ -1,0 +1,23 @@
+.product-spec {
+  margin-bottom: 17px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 260px;
+  font-size: 15px;
+  line-height: 20px;
+  color: $product-spec-color;
+}
+
+.product-spec tr {
+  border-bottom: 1px solid $product-spec-border;
+}
+
+
+.product-spec td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.product-spec td:first-child {
+  padding-right: 9px;
+}
