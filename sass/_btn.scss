@@ -1,12 +1,16 @@
 .btn {
   display: block;
   max-width: 292px;
+  min-width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2px solid $btn-color;
   cursor: pointer;
+  font-size: 17px;
+  line-height: 20px;
   color: $btn-color;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
 }

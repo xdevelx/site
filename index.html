@@ -7,7 +7,6 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
@@ -138,19 +137,23 @@
 
     <!-- contacts -->
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <!-- 1 -->
-      <div class="contacts__row">
-        <span class="contacts__label">e-mail:</span>
-        <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </div>
-      <!-- 2 -->
-      <div class="contacts__row">
-        <span class="contacts__label">адрес:</span>
-        <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+      <div class="contacts__container">
+        <h2 class="contacts__title">Контакты</h2>
+        <!-- 1 -->
+        <div class="contacts__row">
+          <span class="contacts__label">e-mail:</span>
+          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <!-- 2 -->
+        <div class="contacts__row">
+          <span class="contacts__label">адрес:</span>
+          <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+        </div>
       </div>
       <div class="contacts__map" id="google-map"></div>
-      <a class="btn" href="#">Напишите нам</a>
+      <div class="contacts__container">
+        <a class="contacts__btn  btn" href="#">Напишите нам</a>
+      </div>
     </section>
   </main>
 
@@ -185,5 +188,7 @@
       <button class="modal__submit" type="submit">Добавить</button>
     </form>
   </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapmjFnR8dGMMqQ6WcJ9xiHbw3Jr191jM&amp;callback=initMap" async defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
