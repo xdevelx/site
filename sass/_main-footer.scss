@@ -1,0 +1,19 @@
+.main-footer {
+  background-color: $main-footer;
+}
+
+.main-footer__container {
+  @include container;
+}
+
+.main-footer__social {
+  border-bottom: 1px solid $main-footer-border;
+}
+
+.main-footer__social-link {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
