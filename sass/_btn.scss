@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  max-width: 292px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid $btn-color;
+  cursor: pointer;
+  color: $btn-color;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}

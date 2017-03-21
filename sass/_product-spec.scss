@@ -1,8 +1,7 @@
 .product-spec {
-  margin-bottom: 17px;
+  margin: 0 auto;
   border-collapse: collapse;
   width: 100%;
-  max-width: 260px;
   font-size: 15px;
   line-height: 20px;
   color: $product-spec-color;
@@ -20,4 +19,10 @@
 
 .product-spec td:first-child {
   padding-right: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-spec {
+    max-width: 335px;
+  }
 }
