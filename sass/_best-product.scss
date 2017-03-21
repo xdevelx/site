@@ -1,7 +1,6 @@
 .best-product {
+  @include container;
   padding-top: 27px;
-  padding-right: 30px;
-  padding-left: 30px;
   padding-bottom: 35px;
 }
 
@@ -71,10 +70,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding-left: 6.5%;
-    padding-right: 6.5%;
   }
 
   .best-product__title {
@@ -127,8 +122,7 @@
 @media screen and (min-width: 1150px) {
   .best-product {
     padding-top: 0;
-    padding-right: 4.348%;;
-    padding-left: 19.565%;;
+    padding-left: 19.565%;
   }
 
   .best-product__title {

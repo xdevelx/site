@@ -47,10 +47,8 @@
 
 @media screen and (min-width: 768px) {
   .goods-type {
+    @include container;
     display: flex;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 6.5%;
   }
 
   .goods-type__item {
@@ -66,11 +64,5 @@
     &--toys::after {
       right: 34px;
     }
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  .goods-type {
-    padding: 0 4.348%;
   }
 }

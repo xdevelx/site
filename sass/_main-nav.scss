@@ -115,11 +115,9 @@
   }
 
   .main-nav__container {
+    @include container;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 6.5%;
   }
 
   .main-nav__logo {
