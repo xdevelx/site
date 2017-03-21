@@ -1,0 +1,28 @@
+.review {
+  color: $review-color;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__author {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $review-author-color;
+}
+
+.review__user-name {
+  font-size: 17px;
+  line-height: 30px;
+}
