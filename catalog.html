@@ -9,7 +9,7 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page">
+<body class="page  page--catalog">
   <header class="main-header">
     <nav class="main-nav">
       <div class="main-nav__container">
@@ -42,49 +42,59 @@
   </header>
 
   <main class="page__main">
-    <!-- 1 -->
-    <article class="prod-card">
-      <a class="prod-card__img-link" href="#">
-        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Мягкая игрушка — «Зайчик-попрыгайчик»" width="260" height="195">
-      </a>
-      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Зайчик-попрыгайчик</a></h2>
-      <span class="prod-card__desc">Рост 30 см, вес 200 г</span>
-      <div class="prod-card__order-info">
-        <span class="prod-card__price">1 200 руб.</span>
-        <a class="prod-card__btn" href="#">Заказать</a>
-      </div>
-    </article>
-    <!-- 2 -->
-    <article class="prod-card">
-      <a class="prod-card__img-link" href="#">
-        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для белья" width="260" height="195">
-      </a>
-      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Корзинка для белья</a></h2>
-      <span class="prod-card__desc">Диаметр 15 см, высота 10 см</span>
-      <div class="prod-card__order-info">
-        <span class="prod-card__price">690 руб.</span>
-        <a class="prod-card__btn" href="#">Заказать</a>
-      </div>
-    </article>
-    <!-- 3 -->
-    <article class="prod-card">
-      <a class="prod-card__img-link" href="#">
-        <img class="prod-card__img" src="http://placehold.it/260x195" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для игрушек" width="260" height="195">
-      </a>
-      <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Большая корзинка для игрушек</a></h2>
-      <span class="prod-card__desc">Диаметр 30 см, высота 30 см</span>
-      <div class="prod-card__order-info">
-        <span class="prod-card__price">1 500 руб.</span>
-        <a class="prod-card__btn" href="#">Заказать</a>
-      </div>
-    </article>
+    <div class="page__container">
+      <!-- 1 -->
+      <article class="prod-card  prod-card--prod-list">
+        <a class="prod-card__img-link" href="#">
+          <img class="prod-card__img" src="img/photo-1-mobile@1x.jpg" alt="Фото товара" title="Мягкая игрушка — «Зайчик-попрыгайчик»" width="260" height="195">
+        </a>
+        <div class="prod-card__container">
+          <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Зайчик-попрыгайчик</a></h2>
+          <p class="prod-card__desc">Рост 30 см, вес 200 г</p>
+          <div class="prod-card__order-info">
+            <span class="prod-card__price">1 200 руб.</span>
+            <a class="prod-card__btn" href="#">Заказать</a>
+          </div>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="prod-card  prod-card--prod-list">
+        <a class="prod-card__img-link" href="#">
+          <img class="prod-card__img" src="img/photo-2-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для белья" width="260" height="195">
+        </a>
+        <div class="prod-card__container">
+          <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Корзинка для белья</a></h2>
+          <p class="prod-card__desc">Диаметр 15 см, высота 10 см</p>
+          <div class="prod-card__order-info">
+            <span class="prod-card__price">690 руб.</span>
+            <a class="prod-card__btn" href="#">Заказать</a>
+          </div>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="prod-card  prod-card--prod-list">
+        <a class="prod-card__img-link" href="#">
+          <img class="prod-card__img" src="img/photo-3-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для игрушек" width="260" height="195">
+        </a>
+        <div class="prod-card__container">
+          <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Большая корзинка для игрушек</a></h2>
+          <p class="prod-card__desc">Диаметр 30 см, высота 30 см</p>
+          <div class="prod-card__order-info">
+            <span class="prod-card__price">1 500 руб.</span>
+            <a class="prod-card__btn" href="#">Заказать</a>
+          </div>
+        </div>
+      </article>
 
-    <section class="video-card">
-      <h2 class="video-card__title">Процесс производства</h2>
-      <div class="video-card__video"></div>
-      <p class="video-card__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="video-card__btn btn" href="#">Сделать заказ</a>
-    </section>
+      <section class="video-card  video-card--centered">
+        <h2 class="video-card__title">Процесс производства</h2>
+        <div class="video-card__video"></div>
+        <div class="video-card__info">
+          <p class="video-card__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video-card__btn  btn" href="#">Сделать заказ</a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="main-footer">
