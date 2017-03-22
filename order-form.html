@@ -42,99 +42,117 @@
   </header>
 
   <main class="page__main">
-    <p class="page__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="order-form__container">
+        <p class="order-form__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
       <!-- 1 -->
       <fieldset class="form-group">
-        <legend class="form-group__legend">Тип</legend>
-        <div class="radio">
-          <input class="radio__input" id="type-accessory" type="radio" name="order-type" value="accessory" checked>
-          <label class="radio__label" for="type-accessory" >Аксессуар для интерьера</label>
-        </div>
-        <div class="radio">
-          <input class="radio__input" id="type-toy" type="radio" name="order-type" value="toy">
-          <label class="radio__label" for="type-toy" >Детская игрушка</label>
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>Тип</span></h2>
+          <div class="radio">
+            <input class="radio__input" id="type-accessory" type="radio" name="order-type" value="accessory" checked>
+            <label class="radio__label" for="type-accessory" >Аксессуар для интерьера</label>
+          </div>
+          <div class="radio">
+            <input class="radio__input" id="type-toy" type="radio" name="order-type" value="toy">
+            <label class="radio__label" for="type-toy" >Детская игрушка</label>
+          </div>
         </div>
       </fieldset>
       <!-- 2 -->
       <fieldset class="form-group">
-        <legend class="form-group__legend">Цвет</legend>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-white" type="checkbox" name="color-white" checked>
-          <label class="checkbox__label" for="color-white" >Белый</label>
-        </div>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-grey" type="checkbox" name="color-grey" checked>
-          <label class="checkbox__label" for="color-grey" >Серый</label>
-        </div>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-tiffany" type="checkbox" name="color-tiffany">
-          <label class="checkbox__label" for="color-tiffany" >«Тиффани»</label>
-        </div>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-black" type="checkbox" name="color-black">
-          <label class="checkbox__label" for="color-black" >Черный</label>
-        </div>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-pink" type="checkbox" name="color-pink">
-          <label class="checkbox__label" for="color-pink" >Розовый</label>
-        </div>
-        <div class="checkbox">
-          <input class="checkbox__input" id="color-orange" type="checkbox" name="color-orange">
-          <label class="checkbox__label" for="color-orange" >Оранжевый</label>
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>Цвет</span></h2>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-white" type="checkbox" name="color-white" checked>
+            <label class="checkbox__label" for="color-white" >Белый</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-grey" type="checkbox" name="color-grey" checked>
+            <label class="checkbox__label" for="color-grey" >Серый</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-tiffany" type="checkbox" name="color-tiffany">
+            <label class="checkbox__label" for="color-tiffany" >«Тиффани»</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-black" type="checkbox" name="color-black">
+            <label class="checkbox__label" for="color-black" >Черный</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-pink" type="checkbox" name="color-pink">
+            <label class="checkbox__label" for="color-pink" >Розовый</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" id="color-orange" type="checkbox" name="color-orange">
+            <label class="checkbox__label" for="color-orange" >Оранжевый</label>
+          </div>
         </div>
       </fieldset>
       <!-- 3 -->
-      <fieldset class="form-group">
-        <legend class="form-group__legend">ФИО</legend>
-        <div class="textfield">
-          <label class="textfield__label" for="first-name">Имя:</label>
-          <input class="textfield__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
-        </div>
-        <div class="textfield">
-          <label class="textfield__label" for="second-name">Фамилия:</label>
-          <input class="textfield__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*">
-        </div>
-        <div class="textfield">
-          <label class="textfield__label" for="middle-name">Отчество:</label>
-          <input class="textfield__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+      <fieldset class="form-group  form-group--full-name">
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>ФИО</span></h2>
+          <div class="form-group__textfield  textfield">
+            <label class="textfield__label" for="first-name">Имя:</label>
+            <input class="textfield__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+          </div>
+          <div class="form-group__textfield  textfield">
+            <label class="textfield__label" for="second-name">Фамилия:</label>
+            <input class="textfield__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*">
+          </div>
+          <div class="form-group__textfield  textfield">
+            <label class="textfield__label" for="middle-name">Отчество:</label>
+            <input class="textfield__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+          </div>
         </div>
       </fieldset>
       <!-- 4 -->
-      <fieldset class="form-group">
-        <legend class="form-group__legend">ТЕЛ</legend>
-        <div class="textfield  textfield--phone">
-          <input class="textfield__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+      <fieldset class="form-group  form-group--phone">
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>ТЕЛ</span></h2>
+          <div class="textfield  textfield--phone">
+            <input class="textfield__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+          </div>
         </div>
       </fieldset>
       <!-- 5 -->
-      <fieldset class="form-group">
-        <legend class="form-group__legend">E-mail</legend>
-        <div class="textfield  textfield--email">
-          <input class="textfield__input" type="email" name="email" placeholder="Ваш Email*">
+      <fieldset class="form-group  form-group--email">
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>E-mail</span></h2>
+          <div class="textfield  textfield--email">
+            <input class="textfield__input" type="email" name="email" placeholder="Ваш Email*">
+          </div>
         </div>
       </fieldset>
       <!-- 6 -->
       <fieldset class="form-group">
-        <legend class="form-group__legend">Доп</legend>
-        <div class="textfield">
-          <textarea class="textfield__textarea" name="order-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="form-group__container">
+          <h2 class="form-group__legend"><span>Доп</span></h2>
+          <div class="textfield">
+            <textarea class="textfield__textarea" name="order-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
       </fieldset>
-      <span class="order-form__required">*Поля обязательны для заполнения</span>
-      <button class="order-form__submit  btn" type="submit">Отправить заказ</button>
+        <div class="order-form__container">
+          <span class="order-form__required">*Поля обязательны для заполнения</span>
+          <button class="order-form__submit  btn" type="submit">Отправить заказ</button>
+        </div>
     </form>
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__social  social-links">
-      <a class="social-link" href="#">instagram</a>
-      <a class="social-link" href="#">facebook</a>
-      <a class="social-link" href="#">twitter</a>
-    </div>
-    <div class="main-footer__copyright  copyright">
-      <span class="copyright__text">Разработано</span>
-      <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
+    <div class="main-footer__container">
+      <div class="main-footer__social  social-links">
+        <a class="main-footer__social-link  social-link  social-link--insta" href="#">instagram</a>
+        <a class="main-footer__social-link  social-link  social-link--fb" href="#">facebook</a>
+        <a class="main-footer__social-link  social-link  social-link--twi" href="#">twitter</a>
+      </div>
+      <a class="main-footer__copyright  copyright" href="#">
+        <span class="copyright__text">Разработано</span>
+        <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
+      </a>
     </div>
   </footer>
 </body>

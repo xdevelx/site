@@ -1,0 +1,40 @@
+.textfield {
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield__input {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 17px;
+  line-height: normal;
+  color: $textfield-color;
+
+  &::-webkit-input-placeholder {
+    color: rgba($textfield-color, .3);
+  }
+
+  &::-moz-placeholder {
+    color: rgba($textfield-color, .3);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($textfield-color, .3);
+  }
+
+  &:-moz-placeholder {
+    color: rgba($textfield-color, .3);
+  }
+}
+
+.textfield__label {
+  font-weight: 700;
+}
+
+.textfield__textarea {
+  min-height: 140px;
+  padding: 10px 15px;
+  border: 2px solid $textfield-textarea-border;
+  resize: none;
+}

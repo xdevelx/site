@@ -7,12 +7,14 @@ $color-mercury: #e5e5e5;
 $color-seashell: #f1f1f1;
 $color-tundora: #444444;
 $color-downy: #63d1bb;
+$color-downy-saturate: saturate(#63d1bb, 1);
 $color-puerto-rico: desaturate(darken(#63d1bb, 5), 6);
 
 
 // Color settings
 $page: $color-white;
 $page-color: $color-black;
+$page-lead-color: $color-tundora;
 
 $main-header-promo: $color-seashell;
 $main-header-border: $color-gallery;
@@ -52,7 +54,14 @@ $main-footer-border: $color-mercury;
 
 $copyright-color: $color-black;
 
+$order-form-required: $color-tundora;
 
+$form-group-legend-color: $color-downy;
+$form-group-legend-bg: $color-white;
+$form-group-legend-line: $color-downy-saturate;
+
+$textfield-color: $color-tundora;
+$textfield-textarea-border: $color-tundora;
 
 // General
 $font: "Open Sans", "Arial", sans-serif;
