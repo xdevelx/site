@@ -11,6 +11,11 @@
   &--full-name {
     margin-bottom: 15px;
   }
+
+  &--phone .form-group__legend,
+  &--email .form-group__legend {
+    margin-bottom: 5px;
+  }
 }
 
 .form-group__container {
@@ -46,15 +51,6 @@
   padding-right: 27px;
 }
 
-
 .form-group__textfield {
   margin-bottom: 15px;
-}
-
-.form-group--phone .form-group__legend {
-  margin-bottom: 5px;
-}
-
-.form-group--email .form-group__legend {
-  margin-bottom: 5px;
 }

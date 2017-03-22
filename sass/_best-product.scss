@@ -4,18 +4,19 @@
   padding-bottom: 35px;
 }
 
-.best-product__col--desc {
-  margin-bottom: 25px;
-}
+.best-product__col {
+  &--desc {
+    margin-bottom: 25px;
+  }
 
-.best-product__col--img-holder {
-  text-align: center;
-}
+  &--img-holder {
+    text-align: center;
+  }
 
-.best-product__col--price {
-  text-align: center;
+  &--price {
+    text-align: center;
+  }
 }
-
 
 .best-product__title {
   margin-bottom: 25px;
@@ -145,8 +146,9 @@
     transform: translateY(-50%);
   }
 
-  .best-product__col--desc {
-    padding-top: 160px;
+  .best-product__col {
+    &--desc {
+      padding-top: 160px;
+    }
   }
 }
-

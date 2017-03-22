@@ -17,7 +17,6 @@
   font-size: 18px;
   line-height: 30px;
   color: $contacts-title-color;
-
 }
 
 .contacts__row {
@@ -25,8 +24,10 @@
   display: flex;
 }
 
-.contacts__row:last-child {
-  margin-bottom: 40px;
+.contacts__row {
+  &:last-child {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__label {

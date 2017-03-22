@@ -24,24 +24,24 @@
 
   &--interior {
     background-color: $goods-type-interior;
-  }
 
-  &--interior::after {
-    right: 36px;
-    width: 40px;
-    height: 62px;
-    background-image: url("/img/icon-interior.svg");
+    &::after {
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("/img/icon-interior.svg");
+    }
   }
 
   &--toys {
     background-color: $goods-type-toys;
-  }
 
-  &--toys::after {
-    right: 28px;
-    width: 60px;
-    height: 60px;
-    background-image: url("/img/icon-toy.svg");
+    &::after {
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background-image: url("/img/icon-toy.svg");
+    }
   }
 }
 
@@ -61,8 +61,10 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--toys::after {
-      right: 34px;
+    &--toys {
+      &::after {
+        right: 34px;
+      }
     }
   }
 }
