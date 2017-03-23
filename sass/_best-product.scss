@@ -1,12 +1,12 @@
 .best-product {
   @include container;
   padding-top: 27px;
-  padding-bottom: 35px;
+  padding-bottom: 43px;
 }
 
 .best-product__col {
   &--desc {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   &--img-holder {
@@ -19,7 +19,7 @@
 }
 
 .best-product__title {
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 }
 
 .best-product__name {
@@ -39,7 +39,7 @@
 
 .best-product__desc {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   color: $best-product-color;
   font-size: 15px;
   line-height: 24px;
@@ -53,8 +53,8 @@
 
 .best-product__price {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -71,6 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 46px;
   }
 
   .best-product__title {
@@ -78,6 +79,12 @@
     justify-content: space-between;
     align-items: center;
     flex: 1 0 100%;
+    margin-bottom: 44px;
+  }
+
+  .best-product__name {
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .best-product__period {
@@ -105,6 +112,12 @@
     &--price {
       max-width: 295px;
     }
+  }
+
+  .best-product__desc {
+    margin-bottom: 34px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .best-product__img {
