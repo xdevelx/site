@@ -94,3 +94,24 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: 1150px) {
+  .reviews {
+    padding-bottom: 161px;
+    background-position: 6.3% top;
+  }
+
+  .reviews__container {
+    padding-left: 19.565%;
+  }
+
+  .reviews__title {
+    margin-bottom: 30px;
+    font-size: 53px;
+    line-height: 40px;
+  }
+
+  .reviews__controls {
+    right: 4.348%;
+  }
+}

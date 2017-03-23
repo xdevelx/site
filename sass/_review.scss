@@ -33,3 +33,13 @@
     margin-bottom: 57px;
   }
 }
+
+@media screen and (min-width: 1150px) {
+  .review {
+    max-width: 770px;
+  }
+
+  .review__text {
+    margin-bottom: 38px;
+  }
+}

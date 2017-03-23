@@ -137,13 +137,14 @@
   .best-product {
     padding-top: 0;
     padding-left: 19.565%;
+    padding-bottom: 97px;
   }
 
   .best-product__title {
     position: relative;
     justify-content: flex-start;
     margin: 0;
-    transform: translateY(105px);
+    transform: translateY(124px);
   }
 
   .best-product__name {
@@ -161,7 +162,12 @@
 
   .best-product__col {
     &--desc {
-      padding-top: 160px;
+      padding-top: 168px;
+      margin-bottom: 69px;
     }
+  }
+
+  .best-product__desc {
+    margin-bottom: 46px;
   }
 }

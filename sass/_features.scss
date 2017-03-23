@@ -50,10 +50,18 @@
 
 @media screen and (min-width: 1150px) {
   .features {
+    padding-top: 59px;
     padding-left: 19.565%;
+    padding-bottom: 36px;
   }
 
   .features__item {
+    flex: none;
     width: 40%;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
