@@ -72,6 +72,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 46px;
+    padding-bottom: 69px;
   }
 
   .best-product__title {
@@ -88,9 +89,7 @@
   }
 
   .best-product__period {
-    width: 150px;
-    padding-right: 40px;
-    padding-left: 40px;
+    width: 127px;
     text-align: center;
   }
 
@@ -99,6 +98,7 @@
     text-align: left;
 
     &--desc {
+      margin-bottom: 15px;
       max-width: 295px;
     }
 
@@ -126,7 +126,7 @@
   }
 
   .best-product__price {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     margin-top: 40px;
     font-size: 20px;
     text-align: center;

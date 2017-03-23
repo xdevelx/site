@@ -28,7 +28,6 @@
 .contacts__row {
   display: flex;
   flex: 1 0 260px;
-  max-width: 330px;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -54,5 +53,40 @@
 }
 
 .contacts__btn {
-  min-width: 260px;
+  width: 260px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 62px;
+    padding-bottom: 57px;
+    font-size: 17px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 48px;
+      height: 82px;
+      background-color: #ccc;
+      transform: translateY(-50%);
+    }
+  }
+
+  .contacts__map {
+    margin-top: 19px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__btn {
+    width: 230px;
+  }
 }
