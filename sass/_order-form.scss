@@ -1,0 +1,25 @@
+.order-form {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.order-form__container {
+  @include container;
+}
+
+.order-form__lead {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $page-lead-color;
+}
+
+.order-form__required {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $order-form-required;
+}

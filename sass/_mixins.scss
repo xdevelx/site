@@ -1,0 +1,16 @@
+@mixin container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 1150px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  @media screen and (min-width: 1150px) {
+    padding-left: 4.348%;
+    padding-right: 4.348%;
+  }
+}

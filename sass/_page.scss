@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 320px;
+  font-size: 17px;
+  line-height: 24px;
+  color: $page-color;
+  font-family: $font;
+  background-color: $page;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__container {
+  @include container;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
