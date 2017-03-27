@@ -13,9 +13,3 @@
 .page__main {
   flex-grow: 1;
 }
-
-.page__container {
-  @include container;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
