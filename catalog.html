@@ -42,11 +42,15 @@
   </header>
 
   <main class="page__main">
-    <div class="page__container">
-      <!-- 1 -->
+    <!-- 1 -->
+    <section class="prod-list">
       <article class="prod-card  prod-card--prod-list">
         <a class="prod-card__img-link" href="#">
-          <img class="prod-card__img" src="img/photo-1-mobile@1x.jpg" alt="Фото товара" title="Мягкая игрушка — «Зайчик-попрыгайчик»" width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462 1x, http://placehold.it/732x924 2x">
+            <source media="(min-width: 768px)" srcset="http://placehold.it/334x334 1x, http://placehold.it/668x668 2x">
+            <img class="prod-card__img" src="img/photo-1-mobile@1x.jpg" alt="Фото товара" title="Мягкая игрушка — «Зайчик-попрыгайчик»">
+          </picture>
         </a>
         <div class="prod-card__container">
           <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Зайчик-попрыгайчик</a></h2>
@@ -60,7 +64,11 @@
       <!-- 2 -->
       <article class="prod-card  prod-card--prod-list">
         <a class="prod-card__img-link" href="#">
-          <img class="prod-card__img" src="img/photo-2-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для белья" width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462 1x, http://placehold.it/732x924 2x">
+            <source media="(min-width: 768px)" srcset="http://placehold.it/334x334 1x, http://placehold.it/668x668 2x">
+            <img class="prod-card__img" src="img/photo-2-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для белья">
+          </picture>
         </a>
         <div class="prod-card__container">
           <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Корзинка для белья</a></h2>
@@ -74,7 +82,11 @@
       <!-- 3 -->
       <article class="prod-card  prod-card--prod-list">
         <a class="prod-card__img-link" href="#">
-          <img class="prod-card__img" src="img/photo-3-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для игрушек" width="260" height="195">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462 1x, http://placehold.it/732x924 2x">
+            <source media="(min-width: 768px)" srcset="http://placehold.it/334x334 1x, http://placehold.it/668x668 2x">
+            <img class="prod-card__img" src="img/photo-3-mobile@1x.jpg" alt="Фото товара" title="Аксессуар для интерьера — Корзинка для игрушек">
+          </picture>
         </a>
         <div class="prod-card__container">
           <h2 class="prod-card__name"><a class="prod-card__name-link" href="#">Большая корзинка для игрушек</a></h2>
@@ -85,20 +97,27 @@
           </div>
         </div>
       </article>
+    </section>
 
-      <section class="video-card  video-card--centered">
-        <h2 class="video-card__title">Процесс производства</h2>
+    <section class="video-card">
+      <div class="video-card__inner">
         <div class="video-card__video"></div>
         <div class="video-card__info">
+          <h2 class="video-card__title">Процесс производства</h2>
           <p class="video-card__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="video-card__btn  btn" href="#">Сделать заказ</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__container">
+      <div class="main-footer__logo  logo">
+        <a class="logo__link">
+          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+        </a>
+      </div>
       <div class="main-footer__social  social-links">
         <a class="main-footer__social-link  social-link  social-link--insta" href="#">instagram</a>
         <a class="main-footer__social-link  social-link  social-link--fb" href="#">facebook</a>

@@ -1,0 +1,21 @@
+.prod-list {
+  @include container;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .prod-list {
+    padding-top: 81px;
+    padding-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .prod-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 132px;
+    padding-bottom: 49px;
+    margin-bottom: -57px;
+  }
+}
