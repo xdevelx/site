@@ -10,7 +10,11 @@
   }
 
   &--img-holder {
-    text-align: center;
+    justify-content: flex-end;
+  }
+
+  &--img-holder picture {
+    display: flex;
   }
 
   &--price {
@@ -46,9 +50,9 @@
 }
 
 .best-product__img {
+  display: block;
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
 }
 
 .best-product__price {
@@ -105,7 +109,7 @@
     &--img-holder {
       display: flex;
       flex: 1 0 50%;
-      margin-bottom: -152px;
+      margin-bottom: -150px;
       text-align: right;
     }
 
