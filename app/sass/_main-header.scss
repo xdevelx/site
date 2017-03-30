@@ -1,0 +1,109 @@
+.main-header {
+  &--index .main-header__promo {
+    padding-top: 70px;
+    padding-bottom: 0;
+
+    background-color: transparent;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+    background-size: 575px 373px;
+  }
+
+  &--index .main-header__title {
+    margin-bottom: 122px;
+  }
+}
+
+.main-header__promo {
+  padding-top: 70px;
+  padding-bottom: 76px;
+
+  background-color: $main-header-promo;
+}
+
+.main-header__title {
+  margin: 0;
+  padding-right: 10%;
+  padding-left: 10%;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-header-title;
+}
+
+@media screen and (min-resolution: 144dpi), screen and (min-resolution: 1.5dppx) {
+  .main-header {
+    &--index .main-header__promo {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    &--index .main-header__promo {
+      margin-top: -58px;
+      padding-top: 153px;
+
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 1150px 746px;
+    }
+
+    &--index .main-header__title {
+      margin-bottom: 373px;
+    }
+  }
+
+  @media screen and (min-resolution: 144dpi),
+  screen and (min-resolution: 1.5dppx) {
+    .main-header {
+      &--index .main-header__promo {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
+  }
+
+  .main-header__promo {
+    margin-top: -58px;
+    padding-top: 95px;
+    padding-bottom: 78px;
+
+    border-top: 1px solid $main-header-border;
+  }
+
+  .main-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main-header {
+    &--index .main-header__promo {
+      margin-top: -58px;
+      padding-top: 153px;
+    }
+
+    &--index .main-header__title {
+      margin-bottom: 359px;
+    }
+  }
+
+  .main-header__promo {
+    margin-top: -58px;
+    padding-top: 95px;
+    padding-bottom: 98px;
+
+    border-top: 1px solid $main-header-border;
+  }
+
+  .main-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

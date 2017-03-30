@@ -1,0 +1,140 @@
+.video-card {
+  padding-bottom: 58px;
+
+  @include container;
+}
+
+.video-card__inner {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 32px;
+
+  border: 1px solid $video-card-border;
+}
+
+.video-card__title {
+  position: absolute;
+  top: 24px;
+  left: 0;
+
+  margin: 0;
+  padding-right: 34px;
+  padding-left: 91px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.video-card__video {
+  min-width: 260px;
+  height: 150px;
+  margin: 0 -1px 26px;
+
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-card__info {
+  padding-right: 34px;
+  padding-left: 34px;
+}
+
+.video-card__desc {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $video-card-desc;
+}
+
+.video-card__btn {
+  max-width: none;
+}
+
+@media screen and (min-width: 768px) {
+  .video-card {
+    padding-bottom: 63px;
+  }
+
+  .video-card__inner {
+    max-width: 668px;
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  .video-card__video {
+    order: -1;
+    height: 455px;
+    margin: -1px;
+    margin-bottom: 0;
+
+    background-image: url("http://placehold.it/668x455");
+    border-bottom: 1px solid $video-card-border;
+  }
+
+  .video-card__title {
+    position: static;
+
+    margin-top: 38px;
+    margin-bottom: 32px;
+    padding-right: 41px;
+    padding-left: 64px;
+
+    font-size: 20px;
+  }
+
+  .video-card__info {
+    padding-right: 41px;
+    padding-left: 41px;
+  }
+
+  .video-card__desc {
+    margin-bottom: 36px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .video-card {
+    padding-bottom: 104px;
+  }
+
+  .video-card__inner {
+    flex-direction: row;
+    max-width: none;
+    padding-bottom: 0;
+  }
+
+  .video-card__info {
+    padding-left: 80px;
+  }
+
+  .video-card__video {
+    flex-shrink: 0;
+    width: 682px;
+
+    background-image: url("http://placehold.it/682x455");
+  }
+
+  .video-card__title {
+    padding-top: 57px;
+    padding-left: 0;
+  }
+
+  .video-card__desc {
+    margin-bottom: 47px;
+  }
+
+  .video-card__btn {
+    max-width: 230px;
+  }
+}

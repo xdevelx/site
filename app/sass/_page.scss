@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $font;
+  color: $page-color;
+
+  background-color: $page;
+}
+
+.page__main {
+  flex-grow: 1;
+}

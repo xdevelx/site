@@ -1,0 +1,145 @@
+.form-group {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  border: none;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--full-name {
+    margin-bottom: 15px;
+  }
+
+  &--phone .form-group__legend,
+  &--email .form-group__legend {
+    margin-bottom: 9px;
+  }
+}
+
+.form-group__container {
+  @include container;
+}
+
+.form-group__legend {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 26px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $form-group-legend-color;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -5;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $form-group-legend-line;
+  }
+}
+
+.form-group__legend span {
+  padding-right: 27px;
+
+  background: $form-group-legend-bg;
+}
+
+.form-group__textfield {
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-group {
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &--phone {
+      padding-top: 52px;
+      padding-bottom: 26px;
+    }
+
+    &--email {
+      padding-top: 0;
+    }
+
+    &--grey {
+      background-color: $form-group-bg;
+    }
+
+    &--color .form-group__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--more {
+      padding-bottom: 52px;
+    }
+  }
+
+  .form-group__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .form-group__wrap {
+    flex-grow: 1;
+  }
+
+  .form-group__legend {
+    flex-shrink: 0;
+    width: 24%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-group__legend span {
+    background-color: transparent;
+  }
+
+  .form-group__textfield {
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .form-group {
+    &--more {
+      padding-bottom: 47px;
+    }
+  }
+
+  .form-group__container {
+    position: relative;
+
+    padding-right: 19.565%;
+    padding-left: 19.565%;
+  }
+
+  .form-group__legend {
+    position: absolute;
+    left: 110px;
+
+    width: 110px;
+  }
+}

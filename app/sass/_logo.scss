@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+.logo__img {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__img {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .logo__img {
+    width: 149px;
+    height: 72px;
+  }
+}

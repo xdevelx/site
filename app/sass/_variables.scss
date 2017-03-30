@@ -1,0 +1,59 @@
+// Colors variables
+$color-white: #ffffff;
+$color-black: #000000;
+$color-diesel: #010000;
+$color-gallery: #ececec;
+$color-mercury: #e5e5e5;
+$color-seashell: #f1f1f1;
+$color-tundora: #444444;
+$color-downy: #63d1bb;
+$color-downy-saturate: saturate(#63d1bb, 1);
+$color-puerto-rico: desaturate(darken(#63d1bb, 5), 6);
+
+
+// Color settings
+$page: $color-white;
+$page-color: $color-black;
+$page-lead-color: $color-tundora;
+$main-header-promo: $color-seashell;
+$main-header-border: $color-gallery;
+$main-header-title: $color-diesel;
+$main-nav-border: $color-gallery;
+$main-nav-color: $color-black;
+$main-nav-item: $color-white;
+$main-nav-delivery: $color-tundora;
+$user-block-border: $color-gallery;
+$user-block-color: $color-black;
+$user-block-item: $color-white;
+$goods-type-color: $color-white;
+$goods-type-interior: $color-downy;
+$goods-type-toys: $color-puerto-rico;
+$best-product-period: $color-downy;
+$best-product-color: $color-tundora;
+$product-spec-color: $color-tundora;
+$product-spec-border: $color-gallery;
+$btn-color: $color-tundora;
+$reviews-border: $color-gallery;
+$review-color: $color-tundora;
+$review-author-color: $color-black;
+$contacts-color: $color-tundora;
+$contacts-title-color: $color-black;
+$main-footer: $color-seashell;
+$main-footer-border: $color-mercury;
+$copyright-color: $color-black;
+$order-form-required: $color-tundora;
+$form-group-legend-color: $color-downy;
+$form-group-legend-bg: $color-white;
+$form-group-legend-line: $color-downy-saturate;
+$form-group-bg: $color-seashell;
+$textfield-color: $color-tundora;
+$textfield-textarea-border: $color-tundora;
+$prod-card-name-color: $color-black;
+$prod-card-desc-color: $color-tundora;
+$prod-card-border: $color-gallery;
+$video-card-border: $color-gallery;
+$video-card-desc: $color-tundora;
+
+// General
+$font: "Open Sans", "Arial", sans-serif;
+$page-font-size: 15px;

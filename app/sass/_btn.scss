@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  max-width: 292px;
+  padding: 14px 20px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: $btn-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid $btn-color;
+  cursor: pointer;
+
+  &--small {
+    max-width: 230px;
+  }
+}
