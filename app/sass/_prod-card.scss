@@ -71,6 +71,18 @@
   line-height: 24px;
 }
 
+.prod-card__btn {
+  font-size: 0;
+}
+
+.prod-card__btn-icon {
+  fill: $prod-card-icon;
+
+  &:hover {
+    fill: $prod-card-icon-hover;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .prod-card {
     flex-direction: row;

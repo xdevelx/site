@@ -1,4 +1,7 @@
 'use strict'
+svg4everybody({
+  polyfill: true
+});
 
 function initMap() {
   var mapContainer = document.getElementById('google-map');

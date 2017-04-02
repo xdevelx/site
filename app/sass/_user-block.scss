@@ -7,15 +7,20 @@
 }
 
 .user-block__item {
+  position: relative;
   display: flex;
   align-items: center;
 
   background-color: $user-block-item;
   border-top: 1px solid $user-block-border;
+
+  &:hover .user-block__icon {
+    opacity: 1;
+    fill: $user-block-icon;
+  }
 }
 
 .user-block__link {
-  position: relative;
   display: block;
   width: 100%;
   padding-top: 27px;
@@ -28,21 +33,6 @@
   color: $user-block-color;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: transparent url("http://msmux.github.io/sandbox/svg-icons/svg-icons.svg#cyan-arrow") no-repeat center center;
-    background-size: 40px;
-  }
-
-  &--search::after {
-    background-image: url("../img/symbols.svg#icon-search");
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -50,6 +40,16 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.user-block__icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  opacity: .2;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
 }
 
 @media screen and (min-width: 768px) {

@@ -24,6 +24,7 @@
 }
 
 .features__item {
+  position: relative;
   flex: 1 0 50%;
   min-width: 260px;
   margin-bottom: 26px;
@@ -32,6 +33,13 @@
 
   font-size: 17px;
   line-height: 20px;
+}
+
+.features__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $features-icon;
 }
 
 @media screen and (min-width: 768px) {

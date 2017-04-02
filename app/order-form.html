@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <header class="main-header">
@@ -15,10 +15,22 @@
       <div class="main-nav__container">
         <div class="main-nav__logo  logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" />
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+              <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+            </picture>
           </a>
         </div>
-        <button class="main-nav__btn" type="button">Открыть</button>
+        <button class="main-nav__btn" type="button">
+          <span>Открыть</span>
+          <svg class="main-nav__open" width="20" height="14">
+            <use xlink:href="img/symbols.svg#icon-menu-open"/>
+          </svg>
+          <svg class="main-nav__close" width="21" height="20">
+            <use xlink:href="img/symbols.svg#icon-menu-close"/>
+          </svg>
+        </button>
         <ul class="main-nav__list  main-nav__list--menu">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
@@ -29,8 +41,18 @@
         </ul>
         <div class="main-nav__list  main-nav__list--user-block">
           <ul class="user-block">
-            <li class="user-block__item  user-block__item--search"><a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a></li>
-            <li class="user-block__item  user-block__item--cart"><a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a></li>
+            <li class="user-block__item  user-block__item--search">
+              <a class="user-block__link  user-block__link--search" href="">Поиск по сайту</a>
+              <svg class="user-block__icon" width="18" height="18">
+                <use xlink:href="img/symbols.svg#icon-search"/>
+              </svg>
+            </li>
+            <li class="user-block__item  user-block__item--cart">
+              <a class="user-block__link  user-block__link--cart" href="">Корзина: пока пуста</a>
+              <svg class="user-block__icon" width="18" height="18">
+                <use xlink:href="img/symbols.svg#icon-cart"/>
+              </svg>
+            </li>
           </ul>
         </div>
         <span class="main-nav__delivery">Бесплатная доставка по России</span>
@@ -67,30 +89,48 @@
         <div class="form-group__container">
           <h2 class="form-group__legend"><span>Цвет</span></h2>
           <div class="form-group__wrap">
-            <div class="checkbox  checkbox--color">
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-white" type="checkbox" name="color-white" checked>
-              <label class="checkbox__label" for="color-white" >Белый</label>
-            </div>
-            <div class="checkbox  checkbox--color">
+              <span class="checkbox__label" for="color-white" >Белый</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-grey" type="checkbox" name="color-grey" checked>
-              <label class="checkbox__label" for="color-grey" >Серый</label>
-            </div>
-            <div class="checkbox  checkbox--color">
+              <span class="checkbox__label" for="color-grey" >Серый</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-tiffany" type="checkbox" name="color-tiffany">
-              <label class="checkbox__label" for="color-tiffany" >«Тиффани»</label>
-            </div>
-            <div class="checkbox  checkbox--color">
+              <span class="checkbox__label" for="color-tiffany" >«Тиффани»</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-black" type="checkbox" name="color-black">
-              <label class="checkbox__label" for="color-black" >Черный</label>
-            </div>
-            <div class="checkbox  checkbox--color">
+              <span class="checkbox__label" for="color-black" >Черный</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-pink" type="checkbox" name="color-pink">
-              <label class="checkbox__label" for="color-pink" >Розовый</label>
-            </div>
-            <div class="checkbox  checkbox--color">
+              <span class="checkbox__label" for="color-pink" >Розовый</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
+            <label class="checkbox  checkbox--color">
               <input class="checkbox__input" id="color-orange" type="checkbox" name="color-orange">
-              <label class="checkbox__label" for="color-orange" >Оранжевый</label>
-            </div>
+              <span class="checkbox__label" for="color-orange" >Оранжевый</span>
+              <svg class="checkbox__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-tick"/>
+              </svg>
+            </label>
           </div>
         </div>
       </fieldset>
@@ -121,6 +161,9 @@
           <div class="form-group__wrap">
             <div class="textfield  textfield--phone">
               <input class="textfield__input" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              <svg class="textfield__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-phone"/>
+              </svg>
             </div>
           </div>
         </div>
@@ -132,6 +175,9 @@
           <div class="form-group__wrap">
             <div class="textfield  textfield--email">
               <input class="textfield__input" type="email" name="email" placeholder="Ваш Email*">
+              <svg class="textfield__icon" width="33" height="22">
+                <use xlink:href="img/symbols.svg#icon-mail"/>
+              </svg>
             </div>
           </div>
         </div>
@@ -156,21 +202,42 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <div class="main-footer__logo  logo">
-        <a class="logo__link">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип" title="Mishka — магазин игрушек ручной работы" width="86" height="35">
+      <div class="main-footer__logo  logo  logo--footer">
+        <a class="logo__link" href="index.html">
+          <svg class="logo__img" width="86" height="35">
+            <use xlink:href="img/symbols.svg#logo-footer"/>
+          </svg>
         </a>
       </div>
       <div class="main-footer__social  social-links">
-        <a class="main-footer__social-link  social-link  social-link--insta" href="#">instagram</a>
-        <a class="main-footer__social-link  social-link  social-link--fb" href="#">facebook</a>
-        <a class="main-footer__social-link  social-link  social-link--twi" href="#">twitter</a>
+        <a class="main-footer__social-link  social-link  social-link--insta" href="#">
+          <span>instagram</span>
+          <svg class="social-link__icon" width="22" height="21">
+            <use xlink:href="img/symbols.svg#icon-insta"/>
+          </svg>
+        </a>
+        <a class="main-footer__social-link  social-link  social-link--fb" href="#">
+          <span>facebook</span>
+          <svg class="social-link__icon" width="15" height="28">
+            <use xlink:href="img/symbols.svg#icon-fb"/>
+          </svg>
+        </a>
+        <a class="main-footer__social-link  social-link  social-link--twi" href="#">
+          <span>twitter</span>
+          <svg class="social-link__icon" width="23" height="20">
+            <use xlink:href="img/symbols.svg#icon-twitter"/>
+          </svg>
+        </a>
       </div>
       <a class="main-footer__copyright  copyright" href="#">
         <span class="copyright__text">Разработано</span>
-        <img class="copyright__img" src="http://placehold.it/27x34" alt="htmlacademy" title="Интерактивные онлайн-курсы" width="27" height="34">
+        <svg class="copyright__img" width="27" height="34">
+          <use xlink:href="img/symbols.svg#logo-htmlacademy"/>
+        </svg>
       </a>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.4/svg4everybody.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

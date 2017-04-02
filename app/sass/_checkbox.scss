@@ -1,4 +1,5 @@
 .checkbox {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 40px;
@@ -12,15 +13,21 @@
   }
 }
 
+.checkbox__icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 22px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+
 .checkbox__input {
   display: none;
 
-  &:checked ~ .checkbox__label::before {
-    content: "";
-    position: absolute;
-
-    background-color: #000000;
-    background-clip: content-box;
+  &:checked ~ .checkbox__icon {
+    display: block;
   }
 }
 
@@ -60,6 +67,11 @@
     &--color:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+  }
+
+  .checkbox__icon {
+    width: 33px;
+    height: 22px;
   }
 
   .checkbox__label {

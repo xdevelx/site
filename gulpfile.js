@@ -81,7 +81,7 @@ gulp.task('style', function() {
     .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(projectPath.dist.css))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({stream: true}));
 });
 
 

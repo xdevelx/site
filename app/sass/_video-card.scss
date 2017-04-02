@@ -30,6 +30,17 @@
   line-height: 24px;
 }
 
+.video-card__title-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  fill: $video-card-icon;
+}
+
 .video-card__video {
   min-width: 260px;
   height: 150px;
@@ -75,12 +86,14 @@
     margin: -1px;
     margin-bottom: 0;
 
-    background-image: url("http://placehold.it/668x455");
+    background-image: url("../img/video-tablet@1x.jpg");
     border-bottom: 1px solid $video-card-border;
   }
 
   .video-card__title {
-    position: static;
+    position: relative;
+    top: auto;
+    left: auto;
 
     margin-top: 38px;
     margin-bottom: 32px;
@@ -122,7 +135,7 @@
     flex-shrink: 0;
     width: 682px;
 
-    background-image: url("http://placehold.it/682x455");
+    background-image: url("../img/video-desktop@1x.jpg");
   }
 
   .video-card__title {

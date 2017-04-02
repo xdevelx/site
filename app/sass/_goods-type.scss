@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+.goods-type__item {
+  position: relative;
+}
+
 .goods-type__link {
   position: relative;
 
@@ -18,38 +22,26 @@
   color: $goods-type-color;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-
-    transform: translateY(-47%);
-  }
-
   &--interior {
     background-color: $goods-type-interior;
-
-    &::after {
-      right: 36px;
-
-      width: 40px;
-      height: 62px;
-
-      background-image: url("../img/symbols.svg#icon-interior");
-    }
   }
 
-  &--toys {
-    background-color: $goods-type-toys;
+  &--toy {
+    background-color: $goods-type-toy;
+  }
+}
 
-    &::after {
-      right: 28px;
+.goods-type__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-      width: 60px;
-      height: 60px;
+  &--interior {
+    right: 36px;
+  }
 
-      background-image: url("../img/symbols.svg#icon-toy");
-    }
+  &--toy {
+    right: 26px;
   }
 }
 
@@ -60,23 +52,6 @@
     display: flex;
 
     @include container;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      height: 15px;
-
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: center top;
-      background-clip: content-box;
-
-      @include container;
-    }
   }
 
   .goods-type__item {
@@ -92,7 +67,7 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--toys {
+    &--toy {
       &::after {
         right: 34px;
       }

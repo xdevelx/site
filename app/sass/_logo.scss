@@ -1,12 +1,41 @@
 .logo {
   display: flex;
   align-items: center;
+
+  &--footer .logo__img {
+    width: 86px;
+    height: 35px;
+  }
+
+  &--footer .logo__link[href] {
+    &:hover {
+      opacity: 1;
+      fill: $logo-footer;
+    }
+
+    &:active {
+      opacity: .3;
+      fill: $logo-footer;
+    }
+  }
 }
+
+
 
 .logo__link {
   display: inline-block;
 
   vertical-align: middle;
+}
+
+.logo__link[href] {
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 }
 
 .logo__img {

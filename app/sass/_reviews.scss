@@ -1,4 +1,5 @@
 .reviews {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 51px;
 }
@@ -101,6 +102,11 @@
 
     width: 175px;
     margin: 0;
+    border: none;
+  }
+
+  .reviews__control {
+    border: none;
   }
 }
 

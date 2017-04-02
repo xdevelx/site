@@ -1,4 +1,19 @@
 .main-header {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 15px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: center top;
+  }
+
   &--index .main-header__promo {
     padding-top: 70px;
     padding-bottom: 0;

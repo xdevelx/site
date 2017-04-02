@@ -1,4 +1,5 @@
 .textfield {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -13,6 +14,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  outline: none;
 
   &::-webkit-input-placeholder {
     color: rgba($textfield-color, 0.3);
@@ -29,6 +31,24 @@
   &:-moz-placeholder {
     color: rgba($textfield-color, 0.3);
   }
+
+  &:hover,
+  &:focus {
+    border-color: $textfield-input-hover;
+  }
+
+  &:hover ~ .textfield__icon,
+  &:focus ~ .textfield__icon {
+    fill: $textfield-icon-hover;
+  }
+}
+
+.textfield__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: $textfield-icon;
 }
 
 .textfield__label {
@@ -39,9 +59,15 @@
   min-height: 143px;
   padding: 12px 15px;
 
-  border: 2px solid $textfield-textarea-border;
+  border: 2px solid;
+  border-color: $textfield-textarea-border;
 
   resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: $textfield-input-hover;
+  }
 }
 
 @media screen and (min-width: 768px) {

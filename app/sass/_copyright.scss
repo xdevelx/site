@@ -4,6 +4,14 @@
 
   color: $copyright-color;
   text-decoration: none;
+
+  &[href]:active {
+    opacity: .3;
+  }
+
+  &[href]:hover .copyright__img {
+    fill: $copyright-icon-hover;
+  }
 }
 
 .copyright__text {
@@ -12,4 +20,8 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 19px;
+}
+
+.copyright__img {
+  fill: $copyright-icon;
 }
