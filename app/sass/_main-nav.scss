@@ -1,0 +1,278 @@
+.main-nav {
+  position: relative;
+
+  color: $main-nav-color;
+
+  border-top: 1px solid $main-nav-border;
+  border-bottom: 1px solid $main-nav-border;
+}
+
+.main-nav__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 78px;
+  height: 78px;
+
+  font-size: 0;
+
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo {
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $main-nav-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav__list {
+    position: absolute;
+    z-index: 20;
+
+    display: none;
+    width: 100%;
+
+    &--menu {
+      top: 100%;
+    }
+
+    &--user-block {
+      top: calc(100% + 156px);
+    }
+  }
+
+  .main-nav__item {
+    background-color: $main-nav-item;
+    border-top: 1px solid $main-nav-border;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--opened .main-nav__list--info {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__open {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__close {
+    display: inline;
+  }
+
+  .main-nav--no-js .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav--no-js .main-nav__list {
+    position: static;
+
+    display: block;
+  }
+
+  .main-nav--no-js .main-nav__list--info {
+    position: static;
+
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .main-nav__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include container;
+  }
+
+  .main-nav__logo {
+    justify-content: flex-start;
+    order: 1;
+  }
+
+  .main-nav__list {
+    display: flex;
+
+    &--user-block {
+      flex: 1 0 60%;
+      justify-content: flex-end;
+      order: 2;
+    }
+
+    &--menu {
+      flex: 1 0 60%;
+      order: 3;
+    }
+
+    &--menu .main-nav__item {
+      padding-right: 35px;
+    }
+
+    &--menu .main-nav__item:last-child {
+      padding-right: 0;
+    }
+
+    &--menu .main-nav__link {
+      padding-left: 0;
+    }
+
+    &--info {
+      display: none;
+    }
+  }
+
+  .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav__link {
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    font-size: 15px;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    order: 4;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 0;
+
+    font-weight: 400;
+    font-size: 15px;
+    color: $main-nav-delivery;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main-nav__logo {
+    flex: 1 0 auto;
+    justify-content: center;
+    order: 2;
+    padding: 0;
+  }
+
+  .main-nav__container {
+    padding: 0 4.348%;
+  }
+
+  .main-nav__list {
+    &--menu {
+      flex: 1 0 39.13%;
+      order: 1;
+
+      font-size: 17px;
+    }
+
+    &--menu .main-nav__item {
+      padding-left: 35px;
+
+      font-size: 17px;
+
+      border-right: 1px solid $main-nav-border;
+    }
+
+    &--menu .main-nav__item:first-child {
+      padding-left: 0;
+    }
+
+    &--menu .main-nav__item:last-child {
+      border: none;
+    }
+
+    &--menu .main-nav__link {
+      font-size: 17px;
+    }
+
+    &--user-block {
+      flex: 1 0 39.13%;
+      order: 3;
+    }
+
+    &--info {
+      display: flex;
+      flex: 1 0 60%;
+      order: 4;
+    }
+
+    &--info .main-nav__item {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    &--info .main-nav__item:first-child {
+      padding-left: 0;
+    }
+
+    &--info .main-nav__item:last-child {
+      padding-right: 0;
+    }
+
+    &--info .main-nav__link {
+      padding-left: 0;
+    }
+  }
+
+  .main-nav__delivery {
+    order: 5;
+  }
+}

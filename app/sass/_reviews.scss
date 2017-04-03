@@ -1,0 +1,150 @@
+.reviews {
+  position: relative;
+
+  padding-top: 27px;
+  padding-bottom: 51px;
+}
+
+.reviews__container {
+  @include container;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__wrap {
+  position: relative;
+
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.reviews__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.reviews__controls {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+  font-size: 0;
+
+  border: 1px solid $reviews-border;
+}
+
+.reviews__control {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    border-right: 1px solid $reviews-border;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+.reviews__btn {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 79px;
+    padding-bottom: 105px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__container {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .reviews__title {
+    order: 1;
+
+    font-size: 43px;
+    line-height: 46px;
+  }
+
+  .reviews__wrap {
+    order: 3;
+    margin-top: 27px;
+  }
+
+  .reviews__btn {
+    order: 2;
+    width: 175px;
+    margin: 0;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    right: 6.5%;
+    bottom: 28px;
+
+    width: 175px;
+    margin: 0;
+
+    border: none;
+  }
+
+  .reviews__control {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .reviews {
+    padding-bottom: 161px;
+
+    background-position: 6.3% top;
+  }
+
+  .reviews__container {
+    padding-left: 19.565%;
+  }
+
+  .reviews__title {
+    margin-bottom: 30px;
+
+    font-size: 53px;
+    line-height: 40px;
+  }
+
+  .reviews__controls {
+    right: 4.348%;
+  }
+}

@@ -1,0 +1,48 @@
+.review {
+  color: $review-color;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.review__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__author {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $review-author-color;
+}
+
+.review__user-name {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .review__text {
+    margin-bottom: 57px;
+
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .review {
+    max-width: 770px;
+  }
+
+  .review__text {
+    margin-bottom: 38px;
+  }
+}
