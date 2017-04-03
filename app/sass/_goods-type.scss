@@ -7,6 +7,18 @@
 
 .goods-type__item {
   position: relative;
+
+  &--interior {
+    background-color: $goods-type-interior;
+  }
+
+  &--toy {
+    background-color: $goods-type-toy;
+  }
+
+  &:hover .goods-type__link {
+    transform: translateY(-5px);
+  }
 }
 
 .goods-type__link {
@@ -22,6 +34,8 @@
   color: $goods-type-color;
   text-decoration: none;
 
+  transition: transform 0.2s;
+
   &--interior {
     background-color: $goods-type-interior;
   }
@@ -34,6 +48,7 @@
 .goods-type__icon {
   position: absolute;
   top: 50%;
+
   transform: translateY(-50%);
 
   &--interior {

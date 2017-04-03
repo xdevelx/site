@@ -14,10 +14,28 @@ function initMap() {
       disableDefaultUI: true
     });
 
-    var marker = new google.maps.Marker({
+    var image = 'img/icon-map-pin.svg';
+    var mishkaMarker = new google.maps.Marker({
       position: {lat: 59.938907, lng: 30.323083},
       map: map,
-      title: 'Mishka Shop'
+      icon: image
     });
   }
 }
+
+(function(){
+  var mainNav = document.querySelector('.main-nav');
+  var mainNavBtn = document.querySelector('.main-nav__btn');
+
+  mainNav.classList.remove('main-nav--no-js');
+
+  mainNavBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+
+    if (mainNav.classList.contains('main-nav--opened')) {
+      mainNav.classList.remove('main-nav--opened');
+    } else {
+      mainNav.classList.add('main-nav--opened');
+    }
+  });
+})()

@@ -10,11 +10,13 @@
   &--footer .logo__link[href] {
     &:hover {
       opacity: 1;
+
       fill: $logo-footer;
     }
 
     &:active {
-      opacity: .3;
+      opacity: 0.3;
+
       fill: $logo-footer;
     }
   }
@@ -30,11 +32,11 @@
 
 .logo__link[href] {
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 

@@ -34,7 +34,8 @@
 
 .contacts__row {
   display: flex;
-  flex: 1 0 260px;
+  flex: 1 0 280px;
+  align-items: flex-start;
   margin: 0;
   margin-bottom: 30px;
 
@@ -80,10 +81,10 @@
 
   .contacts__title-icon {
     position: absolute;
-    display: block;
     top: 50%;
     right: 0;
 
+    display: block;
     width: 48px;
     height: 82px;
 

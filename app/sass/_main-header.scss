@@ -1,18 +1,5 @@
 .main-header {
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: 15px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: center top;
-  }
 
   &--index .main-header__promo {
     padding-top: 70px;
@@ -59,6 +46,21 @@
 
 @media screen and (min-width: 768px) {
   .main-header {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 15px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center top;
+      background-size: auto 15px;
+    }
+
     &--index .main-header__promo {
       margin-top: -58px;
       padding-top: 153px;
@@ -99,6 +101,11 @@
 
 @media screen and (min-width: 1150px) {
   .main-header {
+    &::after {
+      content: "";
+      background-size: auto;
+    }
+
     &--index .main-header__promo {
       margin-top: -58px;
       padding-top: 153px;

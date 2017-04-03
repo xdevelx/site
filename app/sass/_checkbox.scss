@@ -1,8 +1,11 @@
 .checkbox {
   position: relative;
+
   display: flex;
   align-items: center;
   min-height: 40px;
+
+  user-select: none;
 
   &--color {
     margin-bottom: 21px;
@@ -14,12 +17,14 @@
 }
 
 .checkbox__icon {
-  display: none;
   position: absolute;
   top: 50%;
   left: 10px;
+
+  display: none;
   width: 22px;
   height: 16px;
+
   transform: translateY(-50%);
 }
 

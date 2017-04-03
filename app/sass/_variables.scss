@@ -6,6 +6,7 @@ $color-gallery: #ececec;
 $color-mercury: #e5e5e5;
 $color-seashell: #f1f1f1;
 $color-tundora: #444444;
+$color-boulder: #7c7c7c;
 $color-alto: #d3d2d2;
 $color-abbey: #c1c1c1;
 $color-downy: #63d1bb;
@@ -37,6 +38,8 @@ $best-product-color: $color-tundora;
 $product-spec-color: $color-tundora;
 $product-spec-border: $color-gallery;
 $btn-color: $color-tundora;
+$btn-hover-color: $color-white;
+$btn-active-color: $color-boulder;
 $reviews-border: $color-gallery;
 $review-color: $color-tundora;
 $review-author-color: $color-black;
@@ -71,6 +74,10 @@ $radio-icon: $color-downy;
 $radio-border: $color-black;
 $social-link-icon: $color-downy;
 $logo-footer: $color-downy;
+$link-color: $color-tundora;
+$link-color-hover: $color-downy;
+$link-border: $color-downy;
+
 
 // General
 $font: "Open Sans", "Arial", sans-serif;

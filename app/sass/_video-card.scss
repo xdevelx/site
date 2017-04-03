@@ -15,6 +15,15 @@
   padding-bottom: 32px;
 
   border: 1px solid $video-card-border;
+  transition: box-shadow .2s;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+  }
 }
 
 .video-card__title {
@@ -42,6 +51,8 @@
 }
 
 .video-card__video {
+  position: relative;
+
   min-width: 260px;
   height: 150px;
   margin: 0 -1px 26px;
@@ -69,6 +80,29 @@
   max-width: none;
 }
 
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background: none;
+  border: none;
+  outline: none;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  transition: transform .07s;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .video-card {
     padding-bottom: 63px;
@@ -84,7 +118,6 @@
     order: -1;
     height: 455px;
     margin: -1px;
-    margin-bottom: 0;
 
     background-image: url("../img/video-tablet@1x.jpg");
     border-bottom: 1px solid $video-card-border;

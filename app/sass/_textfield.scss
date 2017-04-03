@@ -1,5 +1,6 @@
 .textfield {
   position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -45,9 +46,11 @@
 
 .textfield__icon {
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
+
   transform: translateY(-50%);
+
   fill: $textfield-icon;
 }
 

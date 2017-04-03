@@ -8,6 +8,7 @@
 
 .user-block__item {
   position: relative;
+
   display: flex;
   align-items: center;
 
@@ -16,6 +17,7 @@
 
   &:hover .user-block__icon {
     opacity: 1;
+
     fill: $user-block-icon;
   }
 }
@@ -46,10 +48,12 @@
   position: absolute;
   top: 50%;
   left: 32px;
-  opacity: .2;
+
   width: 18px;
   height: 18px;
+
   transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 @media screen and (min-width: 768px) {
