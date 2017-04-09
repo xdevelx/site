@@ -63,7 +63,7 @@ gulp.task('serve', function () {
 
 // Task for compiling style.scss files to the style.css
 gulp.task('style', function() {
-  return gulp.src(projectPath.app.style)
+  gulp.src(projectPath.app.style)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())

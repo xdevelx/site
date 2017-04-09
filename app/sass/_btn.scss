@@ -15,10 +15,6 @@
   border: 2px solid $btn-color;
   cursor: pointer;
 
-  &--small {
-    max-width: 230px;
-  }
-
   &:hover {
     color: $btn-hover-color;
 
@@ -27,5 +23,26 @@
 
   &:active {
     color: $btn-active-color;
+  }
+
+  &--small {
+    max-width: 230px;
+  }
+
+  &--fill {
+    color: $color-white;
+
+    background-color: $btn-color-downy;
+    border: none;
+  }
+
+  &--fill:hover {
+    background-color: $btn-color-downy-hover;
+  }
+
+  &--fill:active {
+    color: $color-white;
+
+    opacity: 0.8;
   }
 }

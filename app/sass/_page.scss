@@ -10,6 +10,10 @@
   color: $page-color;
 
   background-color: $page;
+
+  &--fixed {
+    overflow: hidden;
+  }
 }
 
 .page__main {

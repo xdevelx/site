@@ -34,10 +34,10 @@
 
 .contacts__row {
   display: flex;
-  flex: 1 0 280px;
+  flex: 1 1 280px;
   align-items: flex-start;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   &:last-child {
     margin-bottom: 37px;
@@ -50,6 +50,9 @@
 }
 
 .contacts__address {
+  flex: 1 1 auto;
+  padding-right: 20px;
+
   font-style: normal;
 }
 
@@ -143,8 +146,8 @@
 
   .contacts__map {
     position: absolute;
-    top: 71px;
     right: 4.348%;
+    bottom: 105px;
 
     width: 525px;
     margin: 0;

@@ -15,14 +15,15 @@
   padding-bottom: 32px;
 
   border: 1px solid $video-card-border;
-  transition: box-shadow .2s;
+
+  transition: box-shadow 0.2s;
 
   &:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -41,11 +42,13 @@
 
 .video-card__title-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 34px;
 
   width: 32px;
   height: 32px;
+
+  transform: translateY(-50%);
 
   fill: $video-card-icon;
 }
@@ -91,7 +94,8 @@
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   cursor: pointer;
-  transition: transform .07s;
+
+  transition: transform 0.07s;
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.2);
@@ -136,6 +140,10 @@
     font-size: 20px;
   }
 
+  .video-card__title-icon {
+    left: 0;
+  }
+
   .video-card__info {
     padding-right: 41px;
     padding-left: 41px;
@@ -161,6 +169,7 @@
   }
 
   .video-card__info {
+    flex: 1 1 auto;
     padding-left: 80px;
   }
 
@@ -176,11 +185,36 @@
     padding-left: 0;
   }
 
+  .video-card__title-icon {
+    top: 15px;
+  }
+
   .video-card__desc {
     margin-bottom: 47px;
   }
 
   .video-card__btn {
     max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 144dpi), screen and (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .video-card__video {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 144dpi), screen and (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .video-card__video {
+    background-image: url("../img/video-tablet@2x.jpg");
+    background-size: 668px auto;
+  }
+}
+
+@media screen and (min-width: 1150px) and (min-resolution: 144dpi), screen and (min-width: 1150px) and (min-resolution: 1.5dppx) {
+  .video-card__video {
+    background-image: url("../img/video-desktop@2x.jpg");
+    background-size: 682px auto;
   }
 }
