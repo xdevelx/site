@@ -138,7 +138,7 @@ gulp.task('clean', function() {
 
 // Build project
 gulp.task('build', function(fn) {
-  runSequence('clean', 'copy', 'style', 'images', 'symbols', fn);
+  runSequence('clean', 'copy', 'style', 'beautify', 'images', 'symbols', fn);
 });
 
 gulp.task('copy', function() {
