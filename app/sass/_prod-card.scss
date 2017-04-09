@@ -47,6 +47,8 @@
 }
 
 .prod-card__name-link {
+  max-width: 100%;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -80,10 +82,14 @@
 }
 
 .prod-card__btn {
+  display: block;
+
   font-size: 0;
 }
 
 .prod-card__btn-icon {
+  vertical-align: middle;
+
   fill: $prod-card-icon;
 
   &:hover {
