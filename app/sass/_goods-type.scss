@@ -8,6 +8,8 @@
 .goods-type__item {
   position: relative;
 
+  min-height: 100px;
+
   &--interior {
     background-color: $goods-type-interior;
   }
@@ -25,8 +27,9 @@
   position: relative;
 
   display: block;
+  flex: 1 1 auto;
   padding-top: 25px;
-  padding-right: 100px;
+  padding-right: 63%;
   padding-bottom: 30px;
   padding-left: 30px;
 
@@ -71,12 +74,13 @@
 
   .goods-type__item {
     display: flex;
-    flex: 1 0 50%;
+    width: 50%;
   }
 
   .goods-type__link {
     flex-grow: 1;
     padding-top: 28px;
+    padding-right: 57%;
     padding-left: 35px;
 
     font-size: 20px;
@@ -87,5 +91,11 @@
         right: 34px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .goods-type__link {
+    padding-right: 70%;
   }
 }

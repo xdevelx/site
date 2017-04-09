@@ -1,8 +1,4 @@
 'use strict'
-svg4everybody({
-  polyfill: true
-});
-
 function initMap() {
   var mapContainer = document.getElementById('google-map');
 
@@ -24,8 +20,13 @@ function initMap() {
 }
 
 (function(){
-  var mainNav = document.querySelector('.main-nav');
-  var mainNavBtn = document.querySelector('.main-nav__btn');
+  var page = document.querySelector('.page');
+  var mainNav = page.querySelector('.main-nav');
+  var mainNavBtn = page.querySelector('.main-nav__btn');
+  var modalOrder = page.querySelector('.modal');
+  var modalOverlay = page.querySelector('.modal__overlay');
+  var orderBtn = [].slice.call(page.querySelectorAll('[data-order]'));
+
 
   mainNav.classList.remove('main-nav--no-js');
 
@@ -38,4 +39,20 @@ function initMap() {
       mainNav.classList.add('main-nav--opened');
     }
   });
+
+  orderBtn.forEach(function(elem){
+    elem.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalOrder.classList.add('modal--opened');
+      page.classList.add('page--fixed');
+    });
+  });
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modalOrder.classList.remove('modal--opened');
+      page.classList.remove('page--fixed');
+    });
+  }
 })()

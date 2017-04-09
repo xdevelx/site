@@ -57,6 +57,10 @@
   background: $form-group-legend-bg;
 }
 
+.form-group__wrap {
+  flex: 1 1 auto;
+}
+
 .form-group__textfield {
   margin-bottom: 18px;
 
