@@ -94,6 +94,10 @@
     transform: translateY(-50%);
   }
 
+  .contacts__label {
+    padding-right: 25px;
+  }
+
   .contacts__map-inner {
     margin-top: 19px;
     margin-bottom: 55px;
@@ -142,6 +146,10 @@
 
   .contacts__label {
     padding-right: 24px;
+  }
+
+  .contacts__address {
+    padding-right: 0;
   }
 
   .contacts__map {
