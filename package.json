@@ -26,6 +26,7 @@
   },
   "scripts": {
     "test": "editorconfig-cli",
+    "deploy": "gulp build && gulp deploy",
     "build": "gulp build",
     "start": "gulp build && gulp serve"
   },
@@ -37,7 +38,18 @@
     "img/**/*.svg",
     "sass/**/*.{sass,scss}"
   ],
-  "engines": {
-    "node": "6.10"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdevelx/site.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "html",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "https://github.com/xdevelx/site/issues"
+  },
+  "homepage": "https://xdevelx.github.io/site/"
 }
