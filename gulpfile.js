@@ -17,7 +17,8 @@ var gulp = require('gulp'),
     svgmin = require('gulp-svgmin'),
     svgstore = require('gulp-svgstore'),
     del = require('del'),
-    ghPages = require('gulp-gh-pages');
+    ghPages = require('gulp-gh-pages'),
+    dateFormat = require('dateformat');
 
 
 // Setting path to the main files
@@ -50,26 +51,25 @@ var serverConfig = {
   ui: false
 };
 
+var date = new Date();
+var buildDate = dateFormat(date, 'yyyy-mm-dd H:MM');
+
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({'force': true, 'message': 'custom2'}));
+    .pipe(ghPages({'force': true, 'message': 'Build from' + buildDate}));
 });
 
 gulp.task('serve', function () {
   browserSync.init(serverConfig);
 
-  watch([projectPath.app.style], function(event, cb) {
-    gulp.start('style');
-  });
-  watch([projectPath.app.html], function(event, cb) {
-    gulp.start('html:update');
-  });
+  watch([projectPath.app.style], ['style']);
+  watch([projectPath.app.html], ['html:update']);
 });
 
 
 // Task for compiling style.scss files to the style.css
 gulp.task('style', function() {
-  gulp.src(projectPath.app.style)
+  return gulp.src(projectPath.app.style)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -81,7 +81,6 @@ gulp.task('style', function() {
         sort: true
       })
     ]))
-    .pipe(csscomb())
     .pipe(gulp.dest(projectPath.dist.css))
     .pipe(csso())
     .pipe(rename('style.min.css'))
@@ -89,15 +88,6 @@ gulp.task('style', function() {
     .pipe(gulp.dest(projectPath.dist.css))
     .pipe(browserSync.reload({stream: true}));
 });
-
-
-// Task for beautify sass files in app dir
-gulp.task('beautify', function () {
-  return gulp.src(projectPath.app.style)
-    .pipe(csscomb())
-    .pipe(gulp.dest('app/sass/'));
-});
-
 
 // Images optimization
 gulp.task('images', function() {
@@ -144,7 +134,7 @@ gulp.task('clean', function() {
 
 // Build project
 gulp.task('build', function(fn) {
-  runSequence('clean', 'copy', 'style', 'beautify', 'images', 'symbols', fn);
+  runSequence('clean', 'copy', 'style', 'images', 'symbols', fn);
 });
 
 gulp.task('copy', function() {
