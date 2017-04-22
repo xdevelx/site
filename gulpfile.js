@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
@@ -16,7 +16,8 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     svgmin = require('gulp-svgmin'),
     svgstore = require('gulp-svgstore'),
-    del = require('del');
+    del = require('del'),
+    ghPages = require('gulp-gh-pages');
 
 
 // Setting path to the main files
@@ -48,6 +49,11 @@ var serverConfig = {
     cors: true,
     ui: false
 };
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({'force': true, 'message': 'custom1'}));
+});
 
 gulp.task('serve', function () {
   browserSync.init(serverConfig);
