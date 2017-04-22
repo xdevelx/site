@@ -559,16 +559,16 @@ template {
 .logo {
   display: -ms-flexbox;
   display: flex;
-  align-items: center; 
+  align-items: flex-end; 
 
-  -ms-flex-align: center;
+  -ms-flex-align: end;
 }
 .logo--footer .logo__img {
   width: 86px;
   height: 35px;
 }
 .logo--footer .logo__link[href]:hover {
-  opacity: 1;
+  opacity: 0.3;
 
   fill: #63d1bb;
 }
