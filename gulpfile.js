@@ -44,10 +44,10 @@ var projectPath = {
 // Setting up browserSync
 var serverConfig = {
   server: 'dist/',
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+  notify: false,
+  open: true,
+  cors: true,
+  ui: false
 };
 
 gulp.task('deploy', function() {
