@@ -51,8 +51,7 @@ var serverConfig = {
   ui: false
 };
 
-var date = new Date();
-var buildDate = dateFormat(date, 'yyyy-mm-dd H:MM');
+var buildDate = dateFormat(new Date(), 'yyyy-mm-dd H:MM');
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
