@@ -56,7 +56,7 @@ var buildDate = dateFormat(date, 'yyyy-mm-dd H:MM');
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({'force': true, 'message': 'Build from' + buildDate}));
+    .pipe(ghPages({'force': true, 'message': 'Build from ' + buildDate}));
 });
 
 gulp.task('serve', function () {
