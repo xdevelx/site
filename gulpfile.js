@@ -52,7 +52,7 @@ var serverConfig = {
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({'force': true, 'message': 'custom1'}));
+    .pipe(ghPages({'force': true, 'message': 'custom2'}));
 });
 
 gulp.task('serve', function () {
