@@ -3,41 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "^6.7.6",
-    "browser-sync": "^2.18.8",
-    "css-mqpacker": "^5.0.1",
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-csso": "^2.0.0",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.4.1",
-    "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-watch": "^4.3.11",
-    "run-sequence": "^1.2.2",
-    "streamqueue": "^1.1.1"
-  },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "deploy": "gulp build && gulp deploy",
-    "build": "gulp build",
-    "start": "gulp build && gulp serve"
-  },
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "sass/**/*.{sass,scss}"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/xdevelx/site.git"
@@ -51,5 +16,32 @@
   "bugs": {
     "url": "https://github.com/xdevelx/site/issues"
   },
-  "homepage": "https://xdevelx.github.io/site/"
+  "homepage": "https://xdevelx.github.io/site/",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "autoprefixer": "^6.7.6",
+    "browser-sync": "^2.18.8",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^1.2.2",
+    "streamqueue": "^1.1.1"
+  },
+  "scripts": {
+    "deploy": "gulp build && gulp deploy",
+    "build": "gulp build",
+    "start": "gulp build && gulp serve"
+  }
 }
