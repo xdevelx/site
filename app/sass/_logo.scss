@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
   &--footer .logo__img {
     width: 86px;
@@ -9,7 +9,7 @@
 
   &--footer .logo__link[href] {
     &:hover {
-      opacity: 1;
+      opacity: 0.3;
 
       fill: $logo-footer;
     }
