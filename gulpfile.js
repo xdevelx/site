@@ -9,9 +9,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     csscomb = require('gulp-csscomb'),
     csso = require('gulp-csso'),
-    postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    mqpacker = require('css-mqpacker'),
+    autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     imagemin = require('gulp-imagemin'),
     svgmin = require('gulp-svgmin'),
@@ -34,11 +32,10 @@ var projectPath = {
     html: 'app/*.html',
     style: 'app/sass/**/*.scss',
     js: 'app/js/**/*.js',
-    img: 'app/img/*.{jpg,png,gif,svg}',
+    img: 'app/img/**/*.{jpg,png,gif,svg}',
     icons: 'app/img/icons/*.svg',
     fonts: 'app/fonts/**/*.{woff,woff2}'
-  },
-  clean: ['build/**/*']
+  }
 };
 
 
@@ -46,9 +43,7 @@ var projectPath = {
 var serverConfig = {
   server: 'dist/',
   notify: false,
-  open: true,
-  cors: true,
-  ui: false
+  open: true
 };
 
 var buildDate = dateFormat(new Date(), 'yyyy-mm-dd H:MM');
@@ -71,18 +66,11 @@ gulp.task('style', function() {
   return gulp.src(projectPath.app.style)
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer({
-        browsers: ['last 3 versions']
-      }),
-      mqpacker({
-        sort: true
-      })
-    ]))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
     .pipe(gulp.dest(projectPath.dist.css))
     .pipe(csso())
-    .pipe(rename('style.min.css'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(projectPath.dist.css))
     .pipe(browserSync.reload({stream: true}));
@@ -111,7 +99,7 @@ gulp.task('symbols', function() {
 });
 
 
-// Copy *.html in dist and reload
+// Copy *.html in /dist
 gulp.task('html:copy', function() {
   return gulp.src(projectPath.app.html)
     .pipe(gulp.dest(projectPath.dist.html))
