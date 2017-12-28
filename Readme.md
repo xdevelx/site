@@ -1,4 +1,4 @@
-# Личный проект «Мишкаааа» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Мишка1» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Пятецкий](https://up.htmlacademy.ru/adaptive/10/user/160453).
 * Наставник: [Сергей Попов](https://htmlacademy.ru/profile/id42761).
